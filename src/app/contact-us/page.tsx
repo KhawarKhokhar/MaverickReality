@@ -1,4 +1,4 @@
-"use client";
+CK"use client";
 
 import Link from "next/link";
 import { FormEvent, useState } from "react";
@@ -193,7 +193,7 @@ export default function ContactPage() {
                     </Link>
                     . By clicking "Submit" you agree to receive emails, general
                     communications, and marketing text messages and phone calls
-                    from AURA ASSEST REALITY INC. You also agree to the Terms of
+                    from Maverick Realty LLC. You also agree to the Terms of
                     Use and Privacy Policy linked below. Reply STOP to stop or
                     HELP for help. Message & data rates may apply. Message
                     frequency varies.
