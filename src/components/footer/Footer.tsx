@@ -63,10 +63,10 @@ export default function Footer() {
               <p>
                 <span className="text-slate-400">Email:</span>{" "}
                 <a
-                  href="mailto:hello@northtexashomes.com"
+                  href="mailto:info@maverickrealtyz.com"
                   className="hover:underline text-white"
                 >
-                  Info@mavericrealty.com
+                  info@maverickrealtyz.com
                 </a>
               </p>
               <p className="text-slate-400">
