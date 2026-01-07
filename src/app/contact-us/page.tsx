@@ -126,7 +126,6 @@ export default function ContactPage() {
                   <Field label="Phone">
                     <input
                       name="phone"
-                      required
                       placeholder="(xxx) xxx-xxxx"
                       className="w-full rounded-xl border border-slate-200 px-3 py-2 outline-none focus:ring-2 focus:ring-emerald-500"
                     />
