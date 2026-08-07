@@ -2,20 +2,12 @@
 
 import Link from "next/link";
 import { FormEvent, useState } from "react";
-import PolicyConsent from "@/components/forms/PolicyConsent";
-import { usePolicyGate } from "@/components/forms/usePlicyGate";
 
 export default function ContactPage() {
   const [loading, setLoading] = useState(false);
 
-  const { acceptedPolicy, setAcceptedPolicy, policyError, validatePolicy } =
-    usePolicyGate();
-
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-
-    // Gate all submits on policy acceptance
-    if (!validatePolicy()) return;
 
     setLoading(true);
     try {
@@ -31,7 +23,6 @@ export default function ContactPage() {
 
       alert("Thanks! Your message has been sent.");
       e.currentTarget.reset();
-      setAcceptedPolicy(false);
     } catch (err) {
       console.error(err);
       alert("Something went wrong. Please try again.");
@@ -176,13 +167,11 @@ export default function ContactPage() {
                   <input
                     type="checkbox"
                     className="mt-0.5"
-                    checked={acceptedPolicy}
-                    onChange={(e) => setAcceptedPolicy(e.target.checked)}
-                    required
+                    name="marketingConsent"
                   />
 
                   <span>
-                    By submitting, you agree to our{" "}
+                    Optional: By checking this box, you agree to our{" "}
                     <Link
                       href="/privacy-policy"
                       className="text-emerald-700 hover:underline"
@@ -201,13 +190,8 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  disabled={loading || !acceptedPolicy}
-                  className={[
-                    "rounded-xl px-4 py-3 text-sm font-semibold transition",
-                    acceptedPolicy
-                      ? "bg-emerald-600 text-white hover:bg-emerald-700"
-                      : "bg-slate-200 text-slate-500 cursor-not-allowed",
-                  ].join(" ")}
+                  disabled={loading}
+                  className="rounded-xl bg-emerald-600 px-4 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700 disabled:cursor-not-allowed disabled:opacity-60"
                 >
                   {loading ? "Sending..." : "Send Message"}
                 </button>
