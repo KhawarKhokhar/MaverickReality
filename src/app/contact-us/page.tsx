@@ -179,12 +179,7 @@ export default function ContactPage() {
                     >
                       Privacy Policy
                     </Link>
-                    . By clicking "Submit" you agree to receive emails, general
-                    communications, and marketing text messages and phone calls
-                    from Maverick Realty LLC. You also agree to the Terms of
-                    Use and Privacy Policy linked below. Reply STOP to stop or
-                    HELP for help. Message & data rates may apply. Message
-                    frequency varies.
+                    . I agree to receive communications by text message from [Brand Name] about my inquiry. You may opt out by replying STOP or reply HELP for more information. Message frequency varies. Message and data rates may apply. Please review our Privacy Policy (Privacy Policy URL) to learn how your data is used. Once these updates are made, we can review the registration again and proceed with the submission.
                   </span>
                 </label>
 
