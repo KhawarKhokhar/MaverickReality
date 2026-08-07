@@ -170,18 +170,20 @@ export default function ContactPage() {
                     name="marketingConsent"
                   />
 
-                  <span>
-                    I agree to receive communications by text message from Maveric Realty LLC about my inquiry. 
-                    You may opt out by replying STOP or reply HELP for more information. Message frequency
-                    varies. Message and data rates may apply. Please review our Privacy Policy 
-                    <Link
-                      href="/privacy-policy"
-                      className="text-emerald-700 hover:underline"
-                      target="_blank"
-                    >                    
-                    to learn how your data is used. Once these updates are made, we can review the registration
-                    again and proceed with the submission.
-                      </span>
+                 <span>
+  I agree to receive communications by text message from Maveric Realty LLC about my inquiry.
+  You may opt out by replying STOP or reply HELP for more information. Message frequency
+  varies. Message and data rates may apply. Please review our{" "}
+  <Link
+    href="/privacy-policy"
+    className="text-emerald-700 hover:underline"
+    target="_blank"
+    rel="noreferrer"
+  >
+    Privacy Policy
+  </Link>{" "}
+  to learn how your data is used.
+</span>
                 </label>
 
                 <button
