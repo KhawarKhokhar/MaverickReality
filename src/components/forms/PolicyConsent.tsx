@@ -23,7 +23,6 @@ export default function PolicyConsent({
           checked={checked}
           onChange={(e) => onChange(e.target.checked)}
           className="mt-0.5 h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500"
-          required
           aria-invalid={!!error}
           aria-describedby={error ? "policy-error" : undefined}
         />
