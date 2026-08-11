@@ -27,17 +27,28 @@ export default function PolicyConsent({
           aria-invalid={!!error}
           aria-describedby={error ? "policy-error" : undefined}
         />
-        <span>
-          I agree to the{" "}
-          <Link
-            href="/privacy-policy"
-            className="font-semibold text-emerald-700 hover:underline underline-offset-4"
-            target="_blank"
-          >
-            Privacy Policy
-          </Link>{" "}
-          and consent to be contacted about my inquiry.
-        </span>
+         <span>
+    I agree to receive communications by text message regarding offers and
+    transactions from Maverick Realty LLC.
+
+    <br />
+
+    You may opt out by replying STOP or ask for more information by replying
+    HELP. Message frequency varies. Message and data rates may apply.
+
+    <br />
+
+    You may review our Privacy Policy{" "}
+    <a
+      href="https://www.maverickrealtyz.com/privacy-policy"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="underline text-blue-600 hover:text-blue-800"
+    >
+      https://www.maverickrealtyz.com/privacy-policy
+    </a>{" "}
+    to learn how your data is used.
+  </span>
       </label>
 
       {error && (
