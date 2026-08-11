@@ -171,17 +171,9 @@ export default function ContactPage() {
   />
 
   <span>
-    I agree to receive communications by text message regarding offers and
-    transactions from Maverick Realty LLC.
-
-    <br />
-
-    You may opt out by replying STOP or ask for more information by replying
-    HELP. Message frequency varies. Message and data rates may apply.
-
-    <br />
-
-    You may review our Privacy Policy{" "}
+     I agree to receive communications by text message regarding offers and transactions from Maverick Realty LLC.
+You may opt out by replying STOP or ask for more information by replying HELP. Message frequency varies. Message and data rates may apply.
+You may review our Privacy Policy{" "}
     <a
       href="https://www.maverickrealtyz.com/privacy-policy"
       target="_blank"
