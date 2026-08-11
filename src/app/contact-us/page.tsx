@@ -162,36 +162,37 @@ export default function ContactPage() {
                   />
                 </Field>
 
-                {/* Privacy Policy gate */}
-                <label className="text-xs text-slate-500 flex items-start gap-2 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    className="mt-0.5"
-                    name="marketingConsent"
-                  />
+               {/* Privacy Policy gate */}
+<div className="text-xs text-slate-500 flex items-start gap-2">
+  <input
+    type="checkbox"
+    className="mt-0.5"
+    name="marketingConsent"
+  />
 
-                <span>
-  I agree to receive communications by text message regarding offers and transactions from Maverick Realty LLC.
+  <span>
+    I agree to receive communications by text message regarding offers and
+    transactions from Maverick Realty LLC.
 
-  <br />
+    <br />
 
-  You may opt out by replying STOP or ask for more information by replying HELP. Message frequency varies. Message and data rates may apply.
+    You may opt out by replying STOP or ask for more information by replying
+    HELP. Message frequency varies. Message and data rates may apply.
 
-  <br />
+    <br />
 
-  You may review our Privacy Policy{" "}
- <a
-  href="https://www.maverickrealtyz.com/privacy-policy"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="underline text-blue-600 hover:text-blue-800"
-  onClick={(e) => e.stopPropagation()}
->
-  https://www.maverickrealtyz.com/privacy-policy
-</a>{" "}
-  to learn how your data is used.
-</span>
-                </label>
+    You may review our Privacy Policy{" "}
+    <a
+      href="https://www.maverickrealtyz.com/privacy-policy"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="underline text-blue-600 hover:text-blue-800"
+    >
+      https://www.maverickrealtyz.com/privacy-policy
+    </a>{" "}
+    to learn how your data is used.
+  </span>
+</div>
 
                 <button
                   type="submit"
