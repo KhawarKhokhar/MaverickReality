@@ -180,14 +180,15 @@ export default function ContactPage() {
   <br />
 
   You may review our Privacy Policy{" "}
-  <a
-    href="https://www.maverickrealtyz.com/privacy-policy"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="underline text-blue-600 hover:text-blue-800"
-  >
-    https://www.maverickrealtyz.com/privacy-policy
-  </a>{" "}
+ <a
+  href="https://www.maverickrealtyz.com/privacy-policy"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="underline text-blue-600 hover:text-blue-800"
+  onClick={(e) => e.stopPropagation()}
+>
+  https://www.maverickrealtyz.com/privacy-policy
+</a>{" "}
   to learn how your data is used.
 </span>
                 </label>
